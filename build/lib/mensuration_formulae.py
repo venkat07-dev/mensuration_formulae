@@ -1,8 +1,3 @@
-import math
-
-PI = math.pi
-
-
 def square_area(side):
     area = side * side
     return area
@@ -19,23 +14,23 @@ def rectangle_area(length, breadth):
 
 
 def rectangle_perimeter(length, breadth):
-    perimeter = 2*(length + breadth)
+    perimeter = 2 * (length + breadth)
     return perimeter
 
 
 def circle_area(radius):
-    area = PI * (radius ** 2)
+    area = 3.14 * (radius ** 2)
     return area
 
 
 def circle_perimeter(radius):
-    perimeter = 2 * PI * radius
+    perimeter = 2 * 3.14 * radius
     return perimeter
 
 
 def scalene_triangle_area(side1, side2, side3):
     s = (side1 + side2 + side3) / 2
-    area = math.sqrt((s * (s - side1) * (s - side2) * (s - side3)))
+    area = (s * (s - side1) * (s - side2) * (s - side3)) ** 0.5
     return area
 
 
@@ -54,23 +49,23 @@ def isosceles_triangle_perimeter(side, breadth):
     return perimeter
 
 
-def equivalent_triangle_area(a):
-    area = math.sqrt(3/4)*(a*a)
+def equivalent_triangle_area(side):
+    area = ((0.5 ** 3)/4)*(side * side)
     return area
 
 
-def equivalent_triangle_perimeter(a):
-    perimeter = 3*a
+def equivalent_triangle_perimeter(side):
+    perimeter = 3 * side
     return perimeter
 
 
-def right_angle_triangle_area(b, h):
-    area = 	0.5 * b * h
+def right_angle_triangle_area(breadth, height):
+    area = 0.5 * breadth * height
     return area
 
 
-def right_angle_triangle_perimeter(b, hypotenuse, h):
-    perimeter = b+hypotenuse+h
+def right_angle_triangle_perimeter(breadth, hypotenuse, height):
+    perimeter = breadth + hypotenuse + height
     return perimeter
 
 
@@ -79,87 +74,114 @@ def rhombus_area(diag1, diag2):
     return area
 
 
-def rhombus_perimeter(s):
-    perimeter = 4 * s
+def rhombus_perimeter(side):
+    perimeter = 4 * side
     return perimeter
 
 
-def parallelogram_area(b, h):
-    area = b * h
+def parallelogram_area(breadth, height):
+    area = breadth * height
     return area
 
 
-def parallelogram_perimeter(l, b):
-    perimeter = 2*(l+b)
+def parallelogram_perimeter(length, breadth):
+    perimeter = 2*(length + breadth)
     return perimeter
 
 
-def trapezium_area(a, c, h):
-    area = 0.5 * (h*(a+c))
+def trapezium_area(side1, side2, height):
+    area = 0.5 * (height * (side1 + side2))
     return area
 
 
-def trapezium_perimeter(a, b, c, d):
-    perimeter = a+b+c+d
+def trapezium_perimeter(side1, side2, side3, side4):
+    perimeter = side1 + side2 + side3 + side4
     return perimeter
 
 
-def cube_volume(a):
-    vol = a**3
+def cube_volume(side):
+    vol = side ** 3
     return vol
 
 
-def cube_csa(a):
-    csa = 4 * (a*a)
+def cube_csa(side):
+    csa = 4 * (side * side)
     return csa
 
 
-def cube_tsa(a):
-    tsa = 6 * (a*a)
+def cube_tsa(side):
+    tsa = 6 * (side * side)
     return tsa
 
 
-
-
-
-def sphere_volume(r):
-    vol = 4/3 * r ** 3
+def sphere_volume(radius):
+    vol = 4 / 3 * radius ** 3
     return vol
 
 
-def sphere_sa(r):
-    sa = 4 * PI * r ** 2
-    return sa
-
-
-def cylinder_volume(r, h):
-    vol = PI * r ** 2 * h
-    return vol
-
-
-def cylinder_tsa(r, h):
-    sa = 2 * PI * r * (r + h)
-    return sa
-
-
-def cylinder_csa(r, h):
-    sa = 2 * PI * r * h
-    return sa
-
-
-def cuboid_volume(l, b, h):
-    vol = l * b * h
-    return vol
-
-
-def cuboid_csa(l, b, h):
-    csa = 2 * h * (l + b)
+def sphere_csa(radius):
+    csa = 4 * 3.14 * radius ** 2
     return csa
 
 
-def cuboid_tsa(l, b, h):
-    sa = 2 * ((l * b) + (b * h) + (l * h))
-    return sa
+def cylinder_volume(radius, height):
+    vol = 3.14 * radius ** 2 * height
+    return vol
+
+
+def cylinder_tsa(radius, height):
+    tsa = 2 * 3.14 * radius * (radius + height)
+    return tsa
+
+
+def cylinder_csa(radius, height):
+    csa = 2 * 3.14 * radius * height
+    return csa
+
+
+def cuboid_volume(length, breadth, height):
+    vol = length * breadth * height
+    return vol
+
+
+def cuboid_csa(length, breadth, height):
+    csa = 2 * height * (length + breadth)
+    return csa
+
+
+def cuboid_tsa(length, breadth, height):
+    tsa = 2 * ((length * breadth) + (breadth * height) + (length * height))
+    return tsa
+
+
+def cone_volume(radius, height):
+    vol = 0.33 * 3.14 * (radius ** 2) * height
+    return vol
+
+
+def cone_tsa(radius, length):
+    tsa = 3.14 * radius * ( radius + length )
+    return tsa
+
+
+def cone_csa(radius, length):
+    csa = 3.14 * radius * length
+    return csa
+
+
+def hemisphere_volume(radius):
+    vol = 0.66 * 3.14 * (radius ** 2)
+    return vol
+
+
+def hemisphere_csa(radius):
+    csa = 2 * 3.14 * (radius ** 2)
+    return csa
+
+
+def hemisphere_tsa(radius):
+    tsa = 3 * 3.14 * (radius ** 2)
+    return tsa
 
 
 

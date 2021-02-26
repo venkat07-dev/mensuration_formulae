@@ -1,3 +1,4 @@
+README.md
 setup.py
 src/mensuration_formulae.py
 src/mensuration_formulae.egg-info/PKG-INFO
