@@ -6,19 +6,19 @@ Home-page: https://github.com/venkat0701/mensuration_formulae
 Author: Venkateswar.S, Maria Irudaya Regilan J
 Author-email: s.venkateswar05@gmail.com
 License: UNKNOWN
-Description: #mensuration_formulae :
+Description: # mensuration_formulae :
         A PyPI package that can be used to find the values of area,perimeter,volume,surface area of 2d & 3d geometric shapes.
         
-        #Installation :
+        # Installation :
         Run the following to install:
         
         '''cmd
         pip install mensuration-formulae
         '''
         
-        #Team :
-        ##Contributor : Venkateswar.S
-        ##Mentor      : Maria Irudaya Regilan J
+        # Team :
+        ## Contributor : Venkateswar.S
+        ## Mentor      : Maria Irudaya Regilan J
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3.5
 Classifier: Programming Language :: Python :: 3.6
