@@ -5,7 +5,7 @@ with open('README.md', 'r') as file:
 
 setup(
     name='mensuration_formulae',
-    version='1.1',
+    version='1.6',
     description='A package that can calculate area,perimeter,surface areas and volumes of 2d & 3d geometric shapes. ',
     long_description=long_description,
     long_description_content_type='text/markdown',
